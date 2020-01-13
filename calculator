@@ -1,0 +1,89 @@
+import java.util.Scanner;
+public class calculator
+{
+    public static void main (String args[]){
+
+        //User inputs the number of classes he/she has
+        Scanner input = new Scanner (System.in);
+       
+        int classes = 7;
+        classes = input.nextInt();
+        String Grade = "";
+        boolean weighted;
+        double gpa;
+        double number=0;
+
+        //String of if and else statements that set the number to the appropriate GPA
+        if(Grade == "A")
+            number = 4.0;
+        else if(Grade == "B")
+            number = 3.0;
+        else if(Grade == "C")
+            number = 2.0;
+        else if(Grade == "D")
+            number = 1.0;
+        else if(Grade == "F")
+            number = 0;
+        else if(Grade = "A" && weighted = true)
+         number = 5.0;
+        
+            
+            
+
+        //Loop that ends once the student has put information in on all his classes
+        for (classes = 0; classes < 7; classes ++)
+        {
+
+            
+            
+            
+           
+            //reads the letter grade using the String Grade prompt
+            Scanner input3 = new Scanner(System.in);
+            System.out.println("Please enter your grade for this class");
+            Grade = input3.next();
+
+            
+           
+
+        }
+    }
+}
+    /*public static boolean Honors;
+    public static char Letter;
+    public static double A;
+    public static double B;
+    public static double C;
+    public static double D;
+    public static double F;
+    public static boolean HonorsInput() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextBoolean();
+    }
+
+    //public static char LetterInput(String[] args) {
+    //Scanner scanner = new Scanner(System.in);
+    //char Letter = scanner.next().charAt(0);
+    //}
+
+    public static void main(String[] args) {
+        for(int i = 0; i < 7; i++){
+            System.out.println("input if your class os weighted or not please.");
+            HonorsInput();
+            System.out.println("now input what your class letter grade is please.");
+            //LetterInput();
+            Scanner scanner = new Scanner(System.in);
+            char Letter = scanner.next().charAt(0);
+            
+            if (Honors = true) {
+                A = 5.0;
+                B = 4.0;
+                C = 3.0;
+                D = 1.0;
+                F = 0.0;  
+            }
+
+        }
+    }
+}   
+**/
